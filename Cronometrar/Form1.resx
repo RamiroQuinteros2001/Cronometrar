@@ -118,6 +118,9 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="Pausar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
+  </data>
   <data name="Pausar.Location" type="System.Drawing.Point, System.Drawing">
     <value>328, 306</value>
   </data>
@@ -143,6 +146,9 @@
   <data name="&gt;&gt;Pausar.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+  <data name="Reiniciar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt</value>
+  </data>
   <data name="Reiniciar.Location" type="System.Drawing.Point, System.Drawing">
     <value>480, 306</value>
   </data>
@@ -166,6 +172,9 @@
   </data>
   <data name="&gt;&gt;Reiniciar.ZOrder" xml:space="preserve">
     <value>1</value>
+  </data>
+  <data name="Iniciar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 11pt</value>
   </data>
   <data name="Iniciar.Location" type="System.Drawing.Point, System.Drawing">
     <value>183, 306</value>
@@ -198,13 +207,13 @@
     <value>Microsoft Sans Serif, 50pt</value>
   </data>
   <data name="pantalla.Location" type="System.Drawing.Point, System.Drawing">
-    <value>183, 133</value>
+    <value>140, 129</value>
   </data>
   <data name="pantalla.Multiline" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="pantalla.Size" type="System.Drawing.Size, System.Drawing">
-    <value>404, 127</value>
+    <value>495, 127</value>
   </data>
   <data name="pantalla.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>

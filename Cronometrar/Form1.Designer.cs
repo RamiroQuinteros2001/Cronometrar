@@ -41,6 +41,7 @@ namespace Cronometrar
             // Pausar
             // 
             resources.ApplyResources(this.Pausar, "Pausar");
+            this.Pausar.ForeColor = System.Drawing.Color.Maroon;
             this.Pausar.Name = "Pausar";
             this.Pausar.UseVisualStyleBackColor = true;
             this.Pausar.Click += new System.EventHandler(this.Pausar_Click);
@@ -48,6 +49,7 @@ namespace Cronometrar
             // Reiniciar
             // 
             resources.ApplyResources(this.Reiniciar, "Reiniciar");
+            this.Reiniciar.ForeColor = System.Drawing.Color.Maroon;
             this.Reiniciar.Name = "Reiniciar";
             this.Reiniciar.UseVisualStyleBackColor = true;
             this.Reiniciar.Click += new System.EventHandler(this.Reiniciar_Click);
@@ -55,12 +57,14 @@ namespace Cronometrar
             // Iniciar
             // 
             resources.ApplyResources(this.Iniciar, "Iniciar");
+            this.Iniciar.ForeColor = System.Drawing.Color.Maroon;
             this.Iniciar.Name = "Iniciar";
             this.Iniciar.UseVisualStyleBackColor = true;
             this.Iniciar.Click += new System.EventHandler(this.Iniciar_Click);
             // 
             // Tiempo
             // 
+            this.Tiempo.Interval = 10;
             this.Tiempo.Tick += new System.EventHandler(this.Tiempo_Tick);
             // 
             // pantalla

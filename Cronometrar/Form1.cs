@@ -17,15 +17,16 @@ namespace Cronometrar
             InitializeComponent();
         }
 
-        int hh, mm, ss;
+        int hh, mm, ss, ml;
 
-        
+
         private void reiniciar()
         {
             hh = 0;
             mm = 0;
             ss = 0;
-            pantalla.Text = "00:00:00";
+            ml = 0;
+            pantalla.Text = "00:00:00:00";
             Tiempo.Stop();
         }
 
@@ -33,7 +34,7 @@ namespace Cronometrar
 
         private void Cronometro_Load(object sender, EventArgs e)
         {
-            pantalla.Text = "00:00:00";
+            pantalla.Text = "00:00:00:00";
         }
 
         private void Iniciar_Click(object sender, EventArgs e)
@@ -53,13 +54,19 @@ namespace Cronometrar
 
         private void Tiempo_Tick(object sender, EventArgs e)
         {
-            ss += 1;
+            ml += 1;
 
-            pantalla.Text = Convert.ToString(hh + ":" + mm + ":" + ss);
-            if (ss >= 59)
+            pantalla.Text = Convert.ToString(hh + ":" + mm + ":" + ss + ":" + ml);
+            if (ml >= 59)
             {
-                mm += 1;
-                ss = 0;
+                ss += 1;
+                ml = 0;
+
+                if (ss >= 59)
+                {
+                    mm += 1;
+                    ss = 0;
+                }
 
                 if (mm >= 59)
                 {
